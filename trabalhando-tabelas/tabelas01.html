@@ -13,23 +13,15 @@
             box-sizing: border-box;
         }
 
-        main#cx-base {
-            width: 500px;
-            margin: 20px auto;
-            text-align: center;
-            align-items: center;
-            border: 2px solid black;
-            padding: 20px;
-        }
 
-        main#cx-base h1 {
-            margin-bottom: 10px;
+        h1 {
+            margin-left: 50px;
         }
 
         table {
             width: 420px;
             border-collapse: collapse;
-            margin: auto;
+            margin-left: 50px;
         }
 
         td,th {
@@ -43,52 +35,53 @@
             background-color: black;
             color: white;
         }
+
+        tbody tr:nth-child(2n){
+            background-color: lightgray;
+        }
     </style>
 </head>
 
 <body>
     
-    <main id="cx-base">
-        <h1>Trabalhando com tabelas</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th scope="col">Time</th>
-                    <th scope="col">País</th>
-                </tr>
-    
-            </thead>
-    
-            <tbody>
-    
-                <tr> <!-- Linha 1 -->
-                    <td>Flamengo</td>
-                    <td>Brasil</td>
-                </tr>
-                <tr> <!-- Linha 2 -->
-                    <td>Barcelona</td>
-                    <td>Espanha</td>
-                </tr>
-                <tr> <!-- Linha 3 -->
-                    <td>Milan</td>
-                    <td>Itália</td>
-                </tr>
-                <tr> <!-- Linha 4 -->
-                    <td>Chelsea</td>
-                    <td>Inglaterra</td>
-                </tr>
-                <tr> <!-- Linha 4 -->
-                    <td>River Plate</td>
-                    <td>Argentina</td>
-                </tr>
-    
-            </tbody>
-    
-            <tfoot>
-    
-            </tfoot>
-        </table>
-    </main>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Time</th>
+                <th scope="col">País</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr> <!-- Linha 1 -->
+                <td>Flamengo</td>
+                <td>Brasil</td>
+            </tr>
+            <tr> <!-- Linha 2 -->
+                <td>Barcelona</td>
+                <td>Espanha</td>
+            </tr>
+            <tr> <!-- Linha 3 -->
+                <td>Milan</td>
+                <td>Itália</td>
+            </tr>
+            <tr> <!-- Linha 4 -->
+                <td>Chelsea</td>
+                <td>Inglaterra</td>
+            </tr>
+            <tr> <!-- Linha 4 -->
+                <td>River Plate</td>
+                <td>Argentina</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
+    </table>
 
 </body>
 
