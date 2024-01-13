@@ -6,47 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhando com tabelas</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        main#cx-base {
+            width: 500px;
+            margin: 20px auto;
+            text-align: center;
+            align-items: center;
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        main#cx-base h1 {
+            margin-bottom: 10px;
         }
 
         table {
             width: 420px;
             border-collapse: collapse;
+            margin: auto;
         }
 
-        td {
+        td,th {
             border: 1px solid black;
             padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: black;
+            color: white;
         }
     </style>
 </head>
 
 <body>
-    <h1>Trabalhando com tabelas</h1>
-
-    <table>
-        <tr> <!-- Linha 1 -->
-            <td>a1</td>
-            <td>b1</td>
-            <td>c1</td>
-        </tr>
-        <tr> <!-- Linha 2 -->
-            <td>a2</td>
-            <td>b2</td>
-            <td>c2</td>
-        </tr>
-        <tr> <!-- Linha 3 -->
-            <td>a3</td>
-            <td>b3</td>
-            <td>c3</td>
-        </tr>
-        <tr> <!-- Linha 4 -->
-            <td>a4</td>
-            <td>b4</td>
-            <td>c4</td>
-        </tr>
-    </table>
+    
+    <main id="cx-base">
+        <h1>Trabalhando com tabelas</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Time</th>
+                    <th scope="col">País</th>
+                </tr>
+    
+            </thead>
+    
+            <tbody>
+    
+                <tr> <!-- Linha 1 -->
+                    <td>Flamengo</td>
+                    <td>Brasil</td>
+                </tr>
+                <tr> <!-- Linha 2 -->
+                    <td>Barcelona</td>
+                    <td>Espanha</td>
+                </tr>
+                <tr> <!-- Linha 3 -->
+                    <td>Milan</td>
+                    <td>Itália</td>
+                </tr>
+                <tr> <!-- Linha 4 -->
+                    <td>Chelsea</td>
+                    <td>Inglaterra</td>
+                </tr>
+                <tr> <!-- Linha 4 -->
+                    <td>River Plate</td>
+                    <td>Argentina</td>
+                </tr>
+    
+            </tbody>
+    
+            <tfoot>
+    
+            </tfoot>
+        </table>
+    </main>
 
 </body>
 
