@@ -21,6 +21,26 @@
             <label for="input-sobrenome">Senha:</label>
             <input type="password" name="senha" id="input-senha" required minlength="8" maxlength="20" placeholder="Mínimo de 8 caracteres..." autocomplete="current-password">
         </div> <br>
+
+        <div>
+            <label for="input-nota">Nota:</label>
+            <input type="number" name="nota" id="input-nota" min="0" max="10" placeholder="0 a 10" step="0.1" required>
+        </div><br>
+
+        <div>
+            <Label for="input-periodo">Período letivo:</Label>
+            <input type="month" name="periodo-letivo" id="input-periodo-letivo" required>
+        </div><br>
+
+        <div>
+            <Label for="input-data">Dia:</Label>
+            <input type="date" name="data" id="input-data" required>
+        </div><br>
+
+        <div>
+            <label for="input-horario">Horário</label>
+            <input type="time" name="horario" id="input-horario" required>
+        </div><br>
         
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
