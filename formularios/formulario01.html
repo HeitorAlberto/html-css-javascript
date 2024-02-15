@@ -5,45 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
+    <style>
+        fieldset{margin-bottom: 40px;}
+        input{margin-bottom: 20px;}
+    </style>
 </head>
 
 <body>
     <h1>Formulário</h1>
 
     <form action="cadastro.php" autocomplete="on" method="post">
-        
-        <div>
-            <label for="input-nome">Nome:</label>
-            <input type="text" name="nome" id="input-nome" required minlength="5" maxlength="15" placeholder="Nome do usuário" autocomplete="username">
-        </div> <br>
-        
-        <div>
-            <label for="input-sobrenome">Senha:</label>
-            <input type="password" name="senha" id="input-senha" required minlength="8" maxlength="20" placeholder="Mínimo de 8 caracteres..." autocomplete="current-password">
-        </div> <br>
 
-        <div>
-            <label for="input-nota">Nota:</label>
-            <input type="number" name="nota" id="input-nota" min="0" max="10" placeholder="0 a 10" step="0.1" required>
-        </div><br>
+        <fieldset>
+            <legend>Área de login</legend>
+            <div>
+                <label for="input-nome">Nome:</label>
+                <input type="text" name="nome" id="input-nome" required minlength="5" maxlength="15"
+                    placeholder="Nome do usuário" autocomplete="username">
+            </div>
 
-        <div>
-            <Label for="input-periodo">Período letivo:</Label>
-            <input type="month" name="periodo-letivo" id="input-periodo-letivo" required>
-        </div><br>
+            <div>
+                <label for="input-sobrenome">Senha:</label>
+                <input type="password" name="senha" id="input-senha" required minlength="8" maxlength="20"
+                    placeholder="Mínimo de 8 caracteres..." autocomplete="current-password">
+            </div>
+        </fieldset>
 
-        <div>
-            <Label for="input-data">Dia:</Label>
-            <input type="date" name="data" id="input-data" required>
-        </div><br>
+        <fieldset>
+            <legend>Verificação de nota</legend>
+            <div>
+                <label for="input-nota">Nota:</label>
+                <input type="number" name="nota" id="input-nota" min="0" max="10" placeholder="0 a 10" step="0.1"
+                    required>
+            </div>
 
-        <div>
-            <label for="input-horario">Horário</label>
-            <input type="time" name="horario" id="input-horario" required>
-        </div><br>
-        
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
+            <div>
+                <Label for="input-periodo">Período letivo:</Label>
+                <input type="month" name="periodo-letivo" id="input-periodo-letivo" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Marcação do exame</legend>
+            <div>
+                <Label for="input-data">Dia:</Label>
+                <input type="date" name="data" id="input-data" required>
+            </div>
+            <div>
+                <label for="input-horario">Horário</label>
+                <input type="time" name="horario" id="input-horario" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados para contato</legend>
+            <div>
+                <label for="input-email">Email:</label>
+                <input type="email" name="email" id="input-email" required autocomplete="email">
+            </div>
+
+            <div>
+                <label for="input-telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="input-telefone" required autocomplete="tel"
+                    pattern="^[0-9]{4}-[0-9]{4}$">
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+
 
     </form>
 
