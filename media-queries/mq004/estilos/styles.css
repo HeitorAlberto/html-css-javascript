@@ -32,14 +32,15 @@ main {
 
 h1 {
     text-align: center;
-    color: white;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
-    font-size: 1.4em;
+    color: rgba(0, 0, 0, 0.752);
+    font-size: 1.2em;
 }
 
 img {
     display: block;
     margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 img#id-phone {display: block;}
@@ -47,4 +48,15 @@ img#id-tablet {display: none;}
 img#id-print {display: none;}
 img#id-pc {display: none;}
 img#id-tv {display: none;}
+
+main h2 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.752);
+}
+
+h2#txt-phone {display: block;}
+h2#txt-tablet {display: none;}
+h2#txt-print {display: none;}
+h2#txt-pc {display: none;}
+h2#txt-tv {display: none;}
 
