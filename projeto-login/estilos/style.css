@@ -10,7 +10,7 @@ roxo: #5f2c82
 */
 
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -38,7 +38,7 @@ section#frame-base-login {
 
     background-color: white;
     width: 300px;
-    height: 450px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
@@ -65,4 +65,63 @@ div#frame-formulario h1 {
 
 div#frame-formulario p {
     font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+
+
+form div.campo-login-senha label {
+    color: white;
+    width: 20%;
+    padding: 10px;
+    font-weight: bolder;
+    background-color: #5f2c82;
+    border-radius: 8px 0px 0px 8px;
+}
+
+
+div.campo-login-senha input {
+    background-color: #60d2ce;
+    font-size: 1em;
+    width: 80%;
+    height: 39px;
+    border: 0px;
+    border-radius: 0px 8px 8px 0px;
+    margin-left: -5px;
+}
+
+form input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+form input[type=submit]:hover {
+    background-color: #2c605f;
+    cursor: pointer;
+}
+
+form a.btn-lembrar-senha {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: white;
+    border: 1px solid #49a09d;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #2c605f;;
+}
+
+form a.btn-lembrar-senha:hover {
+    background-color: #60d2ce;
 }
