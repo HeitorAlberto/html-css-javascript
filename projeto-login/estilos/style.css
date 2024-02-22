@@ -65,7 +65,8 @@ div#frame-formulario h1 {
 
 div#frame-formulario p {
     font-size: 0.8em;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 
@@ -73,21 +74,33 @@ div#frame-formulario p {
 form div.campo-login-senha label {
     color: white;
     width: 20%;
-    padding: 10px;
+    height: 40px;
+    padding: 0px;
     font-weight: bolder;
     background-color: #5f2c82;
     border-radius: 8px 0px 0px 8px;
+    float: left;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    
+    /* Para centralizar o texto na vertical e horizontal */
+    display: flex;              
+    justify-content: center;
+    align-items: center;
 }
 
 
 div.campo-login-senha input {
-    background-color: #60d2ce;
+    background-color: white;
+    border: 2px solid #5f2c82;
+    border-left: 0px;
     font-size: 1em;
     width: 80%;
-    height: 39px;
-    border: 0px;
+    height: 40px;
     border-radius: 0px 8px 8px 0px;
-    margin-left: -5px;
+    float: right;
+    padding-left: 10px;
+    margin-bottom: 10px;
 }
 
 form input[type=submit] {
@@ -113,14 +126,21 @@ form a.btn-lembrar-senha {
     font-size: 1em;
     width: 100%;
     height: 40px;
-    padding-top: 5px;
+    padding-top: 0px;
     margin-top: 5px;
     background-color: white;
-    border: 1px solid #49a09d;
+    border: 2px solid #49a09d;
     border-radius: 5px;
     text-decoration: none;
-    color: #2c605f;;
+    color: #2c605f;
+    
+    /* Para centralizar o texto na vertical e horizontal */
+    display: flex;              
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 form a.btn-lembrar-senha:hover {
     background-color: #60d2ce;

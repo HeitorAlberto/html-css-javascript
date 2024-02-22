@@ -23,6 +23,10 @@
         float: right;
         width: 70%;
     }
+
+    form div.campo-login-senha label {
+        text-align: center;
+    }
 }
 
 /* TELAS GRANDES */
@@ -34,7 +38,7 @@
 
     section#frame-base-login {
         width: 950px;
-        height: 75vh;
+        height: 60vh;
     }
 
     section#frame-base-login div#frame-imagem {
@@ -54,5 +58,9 @@
 
     div#frame-formulario p {
         font-size: 1.2em;
+    }
+
+    form div.campo-login-senha label {
+        text-align: center;
     }
 }
