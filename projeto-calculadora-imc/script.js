@@ -39,7 +39,7 @@ function calcularIMC(){
         txtResultadoMsg.style.color = "orange";
     } else if (resultadoimc > 30){
         txtResultado.innerHTML = "Resultado: " + resultadoimc.toFixed(2) + " (Obesidade)"
-        txtResultadoMsg.innerHTML = "Atenção, " + nome.value + ". Seu peso muito acima do normal.";
+        txtResultadoMsg.innerHTML = "Atenção, " + nome.value + ". Seu peso está muito acima do normal.";
         txtResultado.style.color = "red";
         txtResultadoMsg.style.color = "red";
     }
