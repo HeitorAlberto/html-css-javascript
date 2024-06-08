@@ -70,6 +70,7 @@ div#form_div_button button {
     font-size: 1.5rem;
     color: white;
     border: none;
+    border-radius: 5px;
     background-color: #000000;
     padding: 5px 0px;
 }
@@ -81,6 +82,8 @@ h2#txt-resultado {
     font-weight: bolder;
 }
 /* FIM DAS CONFIGURAÇÕES GLOBAIS */
+
+
 
 @media (max-width: 450px){
 
