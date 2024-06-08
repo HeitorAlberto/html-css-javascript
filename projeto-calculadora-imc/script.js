@@ -23,17 +23,25 @@ function calcularIMC(){
     resultadoimc = parseFloat(peso.value) / (parseFloat(altura.value) * parseFloat(altura.value) ) // resultado do imc salvo na variável
     
     if (resultadoimc < 18.5){
-        txtResultado.innerHTML = "Resultado: " + resultadoimc.toFixed(2) + " (Magreza)."
-        txtResultadoMsg.innerHTML = "Cuide-se, " + nome.value + ". Seu peso está abaixo do normal."
+        txtResultado.innerHTML = "Resultado: " + resultadoimc.toFixed(2) + " (Magreza)"
+        txtResultadoMsg.innerHTML = "Cuide-se, " + nome.value + ". Seu peso está abaixo do normal.";
+        txtResultado.style.color = "red";
+        txtResultadoMsg.style.color = "red";
     } else if (resultadoimc >= 18.5 && resultadoimc <= 24.9){
-        txtResultado.innerHTML = "Resultado: " + resultadoimc.toFixed(2) + " (Normal)."
-        txtResultadoMsg.innerHTML = "Boas notícias, " + nome.value + ". Seu peso está normal."
+        txtResultado.innerHTML = "Resultado: " + resultadoimc.toFixed(2) + " (Normal)"
+        txtResultadoMsg.innerHTML = "Boas notícias, " + nome.value + ". Seu peso está normal.";
+        txtResultado.style.color = "green";
+        txtResultadoMsg.style.color = "green";
     } else if (resultadoimc >= 25 && resultadoimc <= 30){
-        txtResultado.innerHTML = "Resultado: " + resultadoimc.toFixed(2) + " (Sobrepeso)."
-        txtResultadoMsg.innerHTML = "Cuide-se, " + nome.value + ". Seu peso está acima do normal."
+        txtResultado.innerHTML = "Resultado: " + resultadoimc.toFixed(2) + " (Sobrepeso)"
+        txtResultadoMsg.innerHTML = "Cuide-se, " + nome.value + ". Seu peso está acima do normal.";
+        txtResultado.style.color = "orange";
+        txtResultadoMsg.style.color = "orange";
     } else if (resultadoimc > 30){
-        txtResultado.innerHTML = "Resultado: " + resultadoimc.toFixed(2) + " (Obesidade)."
-        txtResultadoMsg.innerHTML = "Atenção, " + nome.value + ". Seu peso muito acima do normal."
+        txtResultado.innerHTML = "Resultado: " + resultadoimc.toFixed(2) + " (Obesidade)"
+        txtResultadoMsg.innerHTML = "Atenção, " + nome.value + ". Seu peso muito acima do normal.";
+        txtResultado.style.color = "red";
+        txtResultadoMsg.style.color = "red";
     }
 
     

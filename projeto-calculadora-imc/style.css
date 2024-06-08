@@ -81,6 +81,10 @@ h2#txt-resultado {
     font-size: 1.5em;
     font-weight: bolder;
 }
+
+p#txt-resultadoMsg {
+    font-weight: bolder;
+}
 /* FIM DAS CONFIGURAÇÕES GLOBAIS */
 
 
