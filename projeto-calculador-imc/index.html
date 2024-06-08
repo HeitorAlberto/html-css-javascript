@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora IMC</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <main>
+            <h1>Calculadora IMC</h1>
+
+            <form action="">
+                <div>
+                    <label for="cxnome" id="cxnome">Nome:</label>
+                    <input type="text" id="cxnomeid" name="cxnome" required autofocus>
+                </div>
+
+                <!--
+                <div>
+                    <label for="cxidade" id="cxidade">Idade:</label>
+                    <input type="number" step="1" min="1" max="150" name="cxidade" id=" cxidade" required>
+                </div>
+                -->
+        
+                <div>
+                    <label for="cxaltura" id="cxaltura">Altura (em metros):</label>
+                    <input type="number" step="1" name="cxaltura" id="cxalturaid" required>
+                </div>
+
+                <div>
+                    <label for="cxpeso">Peso (kg):</label>
+                    <input type="number" step="0.01" name="cxpeso" id="cxpesoid" required>
+                </div>
+
+
+                <!--
+                <div id="form_div_radio">
+                    <label for="cxsexo">Sexo:</label>
+
+                    <label for="cxsexom" class="sexo_label">Masculino</label>
+                    <input type="radio" name="cxsexo" id="cxsexom" class="radio_sexo" value="masculino">
+                    
+                    <label for="cxsexof" class="sexo_label">Feminino</label>
+                    <input type="radio" name="cxsexo" id="cxsexof" class="radio_sexo" value="feminino">
+                </div>
+                -->
+
+                <div id="form_div_button">
+                    <button type="submit" id="btn-calcular">Calcular IMC</button>
+                    <button type="reset" id="btn-limpar">Limpar dados</button>
+                </div>
+            </form>
+
+            
+                <h2 id="txt-resultado"> </h2>
+                <p id="txt-resultado-msg">Prencha os campos acima para obter o seu IMC.</p>
+        </main>
+
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
