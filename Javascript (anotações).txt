@@ -1,4 +1,4 @@
-Comandos importantes de JavaScript!
+COMANDOS IMPORTANTES DE JAVASCRIPT
 
 SELECIONAR ELEMENTO(S) COM O QUERYSELECTOR
   elementoSelecionado.querySelector(“h1”)   
