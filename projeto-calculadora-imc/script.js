@@ -35,8 +35,8 @@ function calcularIMC(){
     } else if (resultadoimc >= 25 && resultadoimc <= 30){
         txtResultado.innerHTML = "Resultado: " + resultadoimc.toFixed(2) + " (Sobrepeso)"
         txtResultadoMsg.innerHTML = "Cuide-se, " + nome.value + ". Seu peso está acima do normal.";
-        txtResultado.style.color = "orange";
-        txtResultadoMsg.style.color = "orange";
+        txtResultado.style.color = "#f05d02";
+        txtResultadoMsg.style.color = "#f05d02";
     } else if (resultadoimc > 30){
         txtResultado.innerHTML = "Resultado: " + resultadoimc.toFixed(2) + " (Obesidade)"
         txtResultadoMsg.innerHTML = "Atenção, " + nome.value + ". Seu peso está muito acima do normal.";
