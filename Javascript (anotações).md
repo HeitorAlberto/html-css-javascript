@@ -11,33 +11,33 @@
   elementoSelecionado.classList.Remove(“nome da classe”)
 
 
-ESCUTADOR DE EVENTOS
+# ESCUTADOR DE EVENTOS
   elementoSelecionado.addEventListener(“evento”, nomeDaFunção)
 
 
-ARROW FUNCTION (FUNÇÃO ANÔNIMA)
+# ARROW FUNCTION (FUNÇÃO ANÔNIMA)
   const minhaFuncao = (...) =>  uma ação qualquer…
   const minhaFuncao = (...) =>  {duas ou mais ações quaisquer…}
   // As chaves são obrigatórias caso haja duas ou mais ações dentro do bloco de códigos da função.
 
 
-EVENTOS
+# EVENTOS
   Método 1: <p onMouseOver = “minhaFuncao()”></p>
   Método 2:  elementoSelecionado.addEventListener(“MouseOver”, minhaFuncao)
   Alguns eventos: onLoad, onMouseOver, onClick, onFocus, onFocusOut, onKeyPress… 
 
 
-OPERADOR CONDICIONAL TERNÁRIO
+# OPERADOR CONDICIONAL TERNÁRIO
   condição ? comandos se verdadeiro : comandos se falso
 
 
-CRIANDO E ADICIONANDO ELEMENTO HTML
+# CRIANDO E ADICIONANDO ELEMENTO HTML
   Criação: let x = document.createElement("p")
   Exemplo 1: document.body.appendChild(x)
   Exemplo 2: elementoPaiSelecionado.appendChild(x)
 
 
-ESTRUTURA DE REPETIÇÃO FOR EACH
+# ESTRUTURA DE REPETIÇÃO FOR EACH
   nomeDoArray.forEach(function(elemento, index, array){console.log(elemento)};
   Obs. 1: Alternativa ao loop FOR.
   Obs. 2: “index” e “array” são parâmetros opcionais.
