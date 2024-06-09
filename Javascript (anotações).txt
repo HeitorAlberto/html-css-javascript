@@ -41,3 +41,7 @@ ESTRUTURA DE REPETIÇÃO FOR EACH
   nomeDoArray.forEach(function(elemento, index, array){console.log(elemento)};
   Obs. 1: Alternativa ao loop FOR.
   Obs. 2: “index” e “array” são parâmetros opcionais.
+
+MODULOS JAVASCRIPT - usado para organizar blocos de códigos em diferentes arquivos para melhor manutenção e organização
+  Passo 1: export {x} 		(no arquivo 1)
+  Passo 2: import {x} from "pasta/arquivo1.js"		(em outro arquivo qualquer)
