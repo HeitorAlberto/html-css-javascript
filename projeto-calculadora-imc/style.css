@@ -29,7 +29,7 @@ main {
 
 main h1 {
     margin-bottom: 20px;
-    color: #040038;
+    color: #000096;
 }
 
 
@@ -72,7 +72,7 @@ div#form_div_button button {
     color: white;
     border: none;
     border-radius: 5px;
-    background-color: #040038;
+    background-color: #000096;
     padding: 5px 0px;
 }
 
