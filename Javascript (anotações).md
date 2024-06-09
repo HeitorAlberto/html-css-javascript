@@ -1,12 +1,12 @@
-Comandos importantes de JavaScript!
+# Comandos importantes de JavaScript!
 
-SELECIONAR ELEMENTO(S) COM O QUERYSELECTOR
+# SELECIONAR ELEMENTO(S) COM O QUERYSELECTOR
   elementoSelecionado.querySelector(“h1”)   
   elementoSelecionado.querySelector(“#titulo”) (seleciona pelo id “titulo”)
   elementoSelecionado.querySelectorAll(“h1”)  (seleciona todos os h1)
 
 
-ADICIONAR E REMOVER CLASSES
+# ADICIONAR E REMOVER CLASSES
   elementoSelecionado.classList.add(“nome da classe”)
   elementoSelecionado.classList.Remove(“nome da classe”)
 
