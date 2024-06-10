@@ -5,4 +5,4 @@ let somar = (numero1, numero2) => {
     console.log(`A soma entre ${numero1} e ${numero2} é: ${resultado}`);
 }
 
-export {cursos, somar}; //Exportação do Array e da função somar()
+export {cursos, somar}; //Exportação do array e da função somar()
