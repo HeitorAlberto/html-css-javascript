@@ -5,6 +5,7 @@
 let nome = document.querySelector("#cxnomeid");
 let altura = document.querySelector("#cxalturaid");
 let peso = document.querySelector("#cxpesoid");
+let formulario = document.querySelector('form')
 
 let resultadoimc = "";
 let txtResultado = document.querySelector("#txt-resultado");
@@ -51,12 +52,22 @@ function calcularIMC(){
 
 
 
-function limparCampos(){
+function resetarMensagens(){
+    formulario.reset();
     txtResultado.innerHTML = "Olá, " + saudacao + "!";
     txtResultadoMsg.innerHTML = "Prencha os campos acima para obter o seu IMC."
     txtResultado.style.color = "black"
     txtResultadoMsg.style.color = "black"
     caixaResultado.style.backgroundColor = "white"
+}
+
+function validarPreenchimento(){
+    if ((altura.value == "") || (peso.value == "")){
+        txtResultado.innerHTML = "Campos vazios!"
+        caixaResultado.style.backgroundColor = "yellow";
+    } else {
+        calcularIMC();
+    }
 }
 
 
@@ -78,8 +89,8 @@ if (horas < 12) {
 txtResultado.innerHTML = "Olá, " + saudacao + "!";
 
 
-btn.addEventListener("click", function(event){event.preventDefault(); calcularIMC()});
+btn.addEventListener("click", function(event){event.preventDefault(); validarPreenchimento();});
 //Ao clicar no botão, a função anônima executa o "preventDefault()" que impede o comportamento padrão que é recarregar a página, logo em seguida chama a função "calcularIMC" responsável pelo cálculo do IMC
-btn2.addEventListener("click", function(event){event.preventDefault;limparCampos()});
+btn2.addEventListener("click", function(event){event.preventDefault(); resetarMensagens()});
 
 
