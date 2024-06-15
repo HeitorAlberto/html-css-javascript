@@ -76,6 +76,15 @@ div#form_div_button button {
     padding: 5px 0px;
 }
 
+div#caixa-resultado {
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    border-radius: 5px;
+}
 
 h2#txt-resultado {
     margin: 20px 0px 20px 0px;
@@ -85,6 +94,11 @@ h2#txt-resultado {
 
 p#txt-resultadoMsg {
     font-weight: bolder;
+    
+}
+
+p.txt-avisos-importantes {
+    text-align: justify;
 }
 /* FIM DAS CONFIGURAÇÕES GLOBAIS */
 
