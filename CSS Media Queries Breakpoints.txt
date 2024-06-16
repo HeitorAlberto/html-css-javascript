@@ -1,0 +1,8 @@
+SMARTPHONES
+  @media (max-width: 450px){}
+
+TABLETS
+  @media (min-width: 768px) and (max-width: 1024px) {}
+
+COMPUTADORES E OUTRAS TELAS MAIORES
+  @media (min-width: 1025px){}
