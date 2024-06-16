@@ -105,8 +105,15 @@ form button#btn-limpar-dados {
 
 @media (max-width: 450px){
 
+    body {
+        background-color: lightgray;
+    }
     
-
+    main {
+        background-color: white;
+        border: none;
+        width: 100vw;
+    }
 
 
     form div#div-cx-botoes {
