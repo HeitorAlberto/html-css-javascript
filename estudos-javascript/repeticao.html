@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos de repetição</title>
+</head>
+<body>
+    
+
+    <script>
+        let times = ["Flamengo", "Barcelona", "Milan", "Manchester United", "Boca Juniors"];
+
+        let p = document.createElement("p"); //Cria um elemento paragráfo 
+
+        for (let i = 0; i < times.length; i++){
+            p.innerHTML += times[i] + "<br>";
+            document.body.appendChild(p) //Adiciona o paragráfo criado ao corpo da página
+        }
+    </script>
+</body>
+</html>

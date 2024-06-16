@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+
+    
+        
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: #1d1d1d;
+            padding-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+        }
+
+        main {
+            width: 100%;
+        }
+
+        
+
+        form#formCadastro {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 5%;
+            color: white;
+            text-align: left;
+            
+        }
+
+
+        form#formCadastro input {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            background-color: #ffffff;
+            height: 40px;
+            border-radius: 10px;
+            display: block;
+            color: black;
+            padding-left: 2%;
+            border: 0px;
+        }
+
+
+        form#formCadastro input::placeholder {
+            color: #525252;
+        }
+
+        form#formCadastro h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form span {
+            display: none;
+            color: #c00808;
+            margin-top: -35px;
+            margin-bottom: 15px;
+        }
+
+        form#formCadastro button {
+            height: 40px;
+            width: 100%;
+            background-color: aqua;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-size: 1.2em;
+            border: 0px;
+        }
+
+        @media (max-width: 450px){
+            main {
+                width: 410px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            main {
+                width: 740px;
+            }
+        }
+
+        @media (min-width: 1025px){
+            main {
+                width: 800px;
+            }
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <main>
+        <form action="" id="formCadastro">
+
+            <h2>Cadastre-se 📝</h2>
+    
+    
+            <label for="campoNome">Nome</label>
+            <input type="text" name="campoNome" id="campoNome" class="campos" placeholder="Nome" required onFocusOut="validacaoNome()">
+            <span class="spanAviso">Digite um nome válido!</span>
+    
+            <label for="campoSobrenome">Sobrenome</label>
+            <input type="text" name="campoSobrenome" id="campoSobrenome" class="campos" placeholder="Sobrenome" required onFocusOut="validacaoSobrenome()">
+            <span class="spanAviso">Digite um sobrenome válido!</span>
+    
+            <label for="campoEmail">E-mail</label>
+            <input type="email" name="campoEmail" id="campoEmail" class="campos" placeholder="E-mail" required oninput="validacaoEmail()">
+            <span class="spanAviso">Digite um e-mail válido!</span>
+    
+            <label for="campoSenha">Senha</label>
+            <input type="password" name="campoSenha" id="campoSenha" class="campos" placeholder="Mínimo de 8 caracteres" required oninput="validacaoSenha()">
+            <span class="spanAviso">Digite uma senha com 8 caracteres ou mais!</span>
+    
+            <label for="campoConfirmeSenha">Confirme a senha</label>
+            <input type="password" name="campoConfirmeSenha" id="campoConfirmeSenha" class="campos" placeholder="Repita a senha aqui" required oninput="confirmacaoSenha()">
+            <span class="spanAviso">As senhas não são iguais!</span>
+    
+            <button type="submit">Confirmar</button>
+        </form>
+    </main>
+    
+
+    <script>
+        // seleção dos elementos do formulário
+        const form = document.querySelector("#formCadastro");
+        const campo = document.querySelectorAll(".campos");
+        const spanAviso = document.querySelectorAll(".spanAviso");
+        
+        // validador de email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        form.addEventListener("submit", (event) =>{
+            event.preventDefault();
+            validacaoNome();
+            validacaoSobrenome()
+            validacaoEmail();
+            validacaoSenha();
+            confirmacaoSenha();
+            
+        })
+
+        // Função que exibe o span de Aviso abaixo do input (também exibe um borda vermelha no input)
+        function setError(index){
+            campo[index].style.border = "2px solid #e6363e";
+            spanAviso[index].style.display = "block";
+        }
+
+        // Função que remove o span de Aviso (também remove a borda vermelha no input)
+        function removeError(index){
+            campo[index].style.border = "";
+            spanAviso[index].style.display = "none";
+        }
+        
+        // Funções que validam os dados adicionados nos inputs
+        function validacaoNome(){
+            if (campo[0].value.length < 3){setError(0);} else {removeError(0)};
+        }
+
+        function validacaoSobrenome(){
+            if (campo[1].value.length < 3){setError(1)} else {removeError(1)};
+        }
+
+        function validacaoEmail(){
+            if(emailRegex.test(campo[2].value)){removeError(2)} else {setError(2)}
+        };
+
+        function validacaoSenha(){
+            if(campo[3].value.length < 8){setError(3)} else {removeError(3); confirmacaoSenha()};
+        }
+
+        function confirmacaoSenha(){
+            if(campo[3].value == campo[4].value && campo[4].value.length >= 8){removeError(4)} else {setError(4)}
+        }
+
+        
+
+    </script>
+</body>
+</html>

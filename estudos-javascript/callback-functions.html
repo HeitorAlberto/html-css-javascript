@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        function mostrarResultado(r){
+            document.write(r);
+        }
+
+        function somar(n1,n2, cb){
+            let resultado = n1 + n2
+            cb(resultado);
+        }
+
+        somar(5,2,mostrarResultado)
+        //Argumento 1: 5
+        //Argumento 2: 2
+        //Argumento 3: Recebe a função "mostrarResultado(r)"
+    </script>
+</body>
+</html>

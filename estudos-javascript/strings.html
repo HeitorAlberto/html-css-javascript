@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+    <style>
+        * {font-size: 35px;}
+    </style>
+</head>
+<body>
+
+
+
+    <script>
+        let nome = "Heitor Alberto";
+        
+        document.write(nome.length + "<br>"); //Retorna a quantidade de caracters incluindo espaços
+        
+        //EXTRAÇÃO DE UM CARACTER
+        document.write(nome.charAt(0) + "<br>"); //Retorna o caracter na posição selecionada
+        document.write(nome.charCodeAt(0) + "<br>"); //Retorna o unicode do caracter correspondente a posição
+        document.write(nome.at(0) + "<br>"); // Retorna o caracter da posição selecionada
+        
+        //EXTRAÇÃO DE PARTES DA STRING
+        document.write(nome.slice(0,6) + "<br>"); //Extrai do começo
+        document.write(nome.slice(-14,-8) + "<br>");//Extrai começando do fim
+        document.write(nome.substring(0,6) + "<br>");//Números menores que zero valem zero
+        document.write(nome.substr(0,6) + "<br>");//extrai 6 caracteres a partir da posição 0
+
+        //CONVERSÃO EM MAIÚSCULAS E MINÚSCULAS
+        document.write(nome.toUpperCase() + "<br>"); //Para maiúsculas
+        document.write(nome.toLowerCase() + "<br>"); //Para minúsculas
+
+        let curso = " Curso de JavaScript "
+        
+        document.write(curso.trim() + "<br>"); //Remove os espaços em branco do começo e do fim
+    </script>
+</body>
+</html>

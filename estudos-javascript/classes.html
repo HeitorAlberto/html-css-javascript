@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border: 10px solid black;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <script>
+
+        // Selecionando todos os elementos de mesma classe "box"
+        const box = document.querySelectorAll(".box");
+        
+        // Alterando estilos a partir do índice dentro do conjunto de objetos (de classe "box")
+        box[0].style.backgroundColor = "blue";
+        box[2].style.backgroundColor = "green";
+    </script>
+</body>
+</html>
