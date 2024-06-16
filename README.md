@@ -11,3 +11,5 @@ https://heitoralberto.github.io/html-css-javascript/projeto-redes-sociais/
 https://heitoralberto.github.io/html-css-javascript/projeto-login/
 
 https://heitoralberto.github.io/html-css-javascript/projeto-calculadora-imc/
+
+https://heitoralberto.github.io/html-css-javascript/projeto-calculadora-media/
