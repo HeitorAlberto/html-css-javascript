@@ -58,7 +58,7 @@ function resetarMensagens(){
     txtResultadoMsg.innerHTML = "Prencha os campos acima para obter o seu IMC."
     txtResultado.style.color = "black"
     txtResultadoMsg.style.color = "black"
-    caixaResultado.style.backgroundColor = "white"
+    caixaResultado.style.backgroundColor = "lightgray";
 }
 
 function validarPreenchimento(){
