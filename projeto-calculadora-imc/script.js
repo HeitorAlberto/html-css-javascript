@@ -26,12 +26,12 @@ function calcularIMC(){
     if (resultadoimc < 18.5){
         txtResultado.innerHTML = "Resultado: " + resultadoimc.toFixed(2) + " (Magreza)"
         txtResultadoMsg.innerHTML = "Cuide-se, " + nome.value + ". Seu peso está abaixo do normal.";
-        caixaResultado.style.backgroundColor = "red";
+        caixaResultado.style.backgroundColor = "#f51616";
         
     } else if (resultadoimc >= 18.5 && resultadoimc <= 24.9){
         txtResultado.innerHTML = "Resultado: " + resultadoimc.toFixed(2) + " (Normal)"
         txtResultadoMsg.innerHTML = "Boas notícias, " + nome.value + ". Seu peso está normal.";
-        caixaResultado.style.backgroundColor = "green";
+        caixaResultado.style.backgroundColor = "#49fa25";
 
     } else if (resultadoimc >= 25 && resultadoimc <= 30){
         txtResultado.innerHTML = "Resultado: " + resultadoimc.toFixed(2) + " (Sobrepeso)"
@@ -41,7 +41,7 @@ function calcularIMC(){
     } else if (resultadoimc > 30){
         txtResultado.innerHTML = "Resultado: " + resultadoimc.toFixed(2) + " (Obesidade)"
         txtResultadoMsg.innerHTML = "Atenção, " + nome.value + ". Seu peso está muito acima do normal.";
-        caixaResultado.style.backgroundColor = "red";
+        caixaResultado.style.backgroundColor = "#f51616";
 
     }
 
