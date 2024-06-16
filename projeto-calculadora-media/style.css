@@ -29,7 +29,7 @@ main {
 }
 
 main form {
-  width: 320px;
+  width: 350px;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -87,13 +87,13 @@ form button {
 }
 
 form button#btn-calcular {
-    background-color:  #0086b6;
+    background-color: #33cc33;
     border: none;
     border-radius: 5px;
 }
 
 form button#btn-limpar-dados {
-    background-color:  #ff3c1a;
+    background-color:  #0086b6;
     border: none;
     border-radius: 5px;
 }
