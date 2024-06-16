@@ -10,28 +10,26 @@
     <body>
 
         <main>
-            <h1>Calculadora de nota média</h1>
+            <h1>CALCULADORA DE NOTA MÉDIA</h1>
             <form action="" id="formulario">
-                <div>
+                <div id="div-cx-nota1">
                     <label for="cx-nota1">Nota 1:</label>
-                    <input type="number" name="cx-nota1" id="cx-nota1">
+                    <input type="number" name="cx-nota1" id="cx-nota1" step="0.1">
                 </div>
 
-                <div>
-                    <label for="cx-nota1">Nota 2:</label>
-                    <input type="number" name="cx-nota2" id="cx-nota2">
+                <div id="div-cx-nota2">
+                    <label for="cx-nota2">Nota 2:</label>
+                    <input type="number" name="cx-nota2" id="cx-nota2" step="0.1">
                 </div>
 
-                <div id="cx-resultado">
+                <div id="div-cx-resultado">
                     <span>Resultado:</span>
-                    <div>
-                        <span>Média 6 - Aprovado(a)</span>
-                    </div>
+                    <span>Resultado aqui...</span>
                 </div>
 
-                <div id="cx-botoes">
-                    <button type="submit">Calcular</button>
-                    <button type="reset">Limpar dados</button>
+                <div id="div-cx-botoes">
+                    <button type="submit" id="btn-calcular">Calcular</button>
+                    <button type="reset" id="btn-limpar-dados">Limpar dados</button>
                 </div>
             </form>
         </main>

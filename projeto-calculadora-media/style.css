@@ -29,7 +29,7 @@ main {
 }
 
 main form {
-  width: 293.203px;
+  width: 320px;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -44,13 +44,56 @@ main form div {
 
 main form input {
     width: 100%;
+    text-align: center;
 }
 
 main form label {
-    margin-bottom: 20px;
+    font-weight: bolder;
 }
 
-form div:nth-child(4) {
+
+
+form div#div-cx-nota1, div#div-cx-nota2{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 30% 70%;
+}
+
+form div#div-cx-resultado {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    justify-items: center;
+}
+
+#div-cx-resultado span:nth-child(1) {
+    font-weight: bolder;
+}
+
+#div-cx-resultado span:nth-child(2){
+    background-color: lightgray;
+    width: 100%;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+form div#div-cx-botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+form button {
+    padding: 5px 0px;
+}
+
+form button#btn-calcular {
+    background-color:  #0086b6;
+    border: none;
+    border-radius: 5px;
+}
+
+form button#btn-limpar-dados {
+    background-color:  #ff3c1a;
+    border: none;
+    border-radius: 5px;
 }
