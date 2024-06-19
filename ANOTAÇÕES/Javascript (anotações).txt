@@ -26,6 +26,10 @@ EVENTOS
   Método 2:  elementoSelecionado.addEventListener(“MouseOver”, minhaFuncao)
   Alguns eventos: onLoad, onMouseOver, onClick, onFocus, onFocusOut, onKeyPress… 
 
+REPETIÇÃO
+for (n of nomes){console.log(n)} //Retorna os valores encontrados
+for (n in nomes){console.log(n)} //Retorna os índices encontrados
+
 
 OPERADOR CONDICIONAL TERNÁRIO
   condição ? comandos se verdadeiro : comandos se falso
