@@ -22,7 +22,7 @@ ARROW FUNCTION (FUNÇÃO ANÔNIMA)
 
 
 EVENTOS
-  Método 1: <p onMouseOver = “minhaFuncao()”></p>
+	Método 1: <p onMouseOver = “minhaFuncao()”></p>
   Método 2:  elementoSelecionado.addEventListener(“MouseOver”, minhaFuncao)
   Alguns eventos: onLoad, onMouseOver, onClick, onFocus, onFocusOut, onKeyPress… 
 
