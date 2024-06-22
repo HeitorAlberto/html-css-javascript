@@ -18,18 +18,35 @@ ESCUTADOR DE EVENTOS
 ARROW FUNCTION (FUNÇÃO ANÔNIMA)
   const minhaFuncao = (...) =>  uma ação qualquer…
   const minhaFuncao = (...) =>  {duas ou mais ações quaisquer…}
+	// A variável passa a ser a referência da função
   // As chaves são obrigatórias caso haja duas ou mais ações dentro do bloco de códigos da função.
 
 
 EVENTOS
-	Método 1: <p onMouseOver = “minhaFuncao()”></p>
+  Método 1: <p onMouseOver = “minhaFuncao()”></p>
   Método 2:  elementoSelecionado.addEventListener(“MouseOver”, minhaFuncao)
-  Alguns eventos: onLoad, onMouseOver, onClick, onFocus, onFocusOut, onKeyPress… 
+  // Alguns eventos: onLoad, onMouseOver, onClick, onFocus, onFocusOut, onKeyPress… 
 
 
 REPETIÇÃO
 	for (n of nomes){console.log(n)} //Retorna os valores encontrados
 	for (n in nomes){console.log(n)} //Retorna os índices encontrados
+
+
+REPETIÇÃO FOR EACH
+  array.forEach(function(elemento, index, array){console.log(elemento)};
+	  // Alternativa ao loop FOR.
+		// argumento 1 é obrigatório.
+	  // “index” e “array” são parâmetros opcionais.
+
+
+REPETIÇÃO MAP
+	Método 1: array.map((elemento,index,array) => {console.log(elemento)})
+	Método 2: const exibir = (elemento, index, array) => {console.log(elemento)}
+						array.map(exibir)
+		// MAP percorre todos os elementos sem interrupção.
+		// argumento 1 é obrigatório.
+		// “index” e “array” são parâmetros opcionais.
 
 
 OPERADOR CONDICIONAL TERNÁRIO
@@ -40,12 +57,6 @@ CRIANDO E ADICIONANDO ELEMENTO HTML
   Criação: let x = document.createElement("p")
   Exemplo 1: document.body.appendChild(x)
   Exemplo 2: elementoPaiSelecionado.appendChild(x)
-
-
-ESTRUTURA DE REPETIÇÃO FOR EACH
-  nomeDoArray.forEach(function(elemento, index, array){console.log(elemento)};
-  Obs. 1: Alternativa ao loop FOR.
-  Obs. 2: “index” e “array” são parâmetros opcionais.
 
 
 MODULOS JAVASCRIPT - usado para organizar blocos de códigos em diferentes arquivos para melhor manutenção e organização
