@@ -44,9 +44,9 @@ REPETIÇÃO MAP
 	Método 1: array.map((elemento,index,array) => {console.log(elemento)})
 	Método 2: const exibir = (elemento, index, array) => {console.log(elemento)}
 						array.map(exibir)
-		// MAP percorre todos os elementos sem interrupção.
-		// argumento 1 é obrigatório.
-		// “index” e “array” são parâmetros opcionais.
+	// MAP percorre todos os elementos sem interrupção.
+	// argumento 1 é obrigatório.
+	// “index” e “array” são parâmetros opcionais.
 
 
 OPERADOR CONDICIONAL TERNÁRIO
