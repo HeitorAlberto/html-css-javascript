@@ -41,8 +41,8 @@ REPETIÇÃO FOR EACH
 
 
 REPETIÇÃO MAP
-	Método 1: array.map((elemento,index,array) => {console.log(elemento)})
-	Método 2: const exibir = (elemento, index, array) => {console.log(elemento)}
+  Método 1: array.map((elemento,index,array) => {console.log(elemento)})
+  Método 2: const exibir = (elemento, index, array) => {console.log(elemento)}
             array.map(exibir)
   // MAP percorre todos os elementos sem interrupção.
   // argumento 1 é obrigatório.
