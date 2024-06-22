@@ -18,7 +18,7 @@ ESCUTADOR DE EVENTOS
 ARROW FUNCTION (FUNÇÃO ANÔNIMA)
   const minhaFuncao = (...) =>  uma ação qualquer…
   const minhaFuncao = (...) =>  {duas ou mais ações quaisquer…}
-	// A variável passa a ser a referência da função
+  // A variável passa a ser a referência da função
   // As chaves são obrigatórias caso haja duas ou mais ações dentro do bloco de códigos da função.
 
 
@@ -29,24 +29,24 @@ EVENTOS
 
 
 REPETIÇÃO
-	for (n of nomes){console.log(n)} //Retorna os valores encontrados
-	for (n in nomes){console.log(n)} //Retorna os índices encontrados
+  for (n of nomes){console.log(n)} //Retorna os valores encontrados
+  for (n in nomes){console.log(n)} //Retorna os índices encontrados
 
 
 REPETIÇÃO FOR EACH
   array.forEach(function(elemento, index, array){console.log(elemento)};
-	  // Alternativa ao loop FOR.
-		// argumento 1 é obrigatório.
-	  // “index” e “array” são parâmetros opcionais.
+    // Alternativa ao loop FOR.
+    // argumento 1 é obrigatório.
+    // “index” e “array” são parâmetros opcionais.
 
 
 REPETIÇÃO MAP
 	Método 1: array.map((elemento,index,array) => {console.log(elemento)})
 	Método 2: const exibir = (elemento, index, array) => {console.log(elemento)}
-						array.map(exibir)
-	// MAP percorre todos os elementos sem interrupção.
-	// argumento 1 é obrigatório.
-	// “index” e “array” são parâmetros opcionais.
+            array.map(exibir)
+  // MAP percorre todos os elementos sem interrupção.
+  // argumento 1 é obrigatório.
+  // “index” e “array” são parâmetros opcionais.
 
 
 OPERADOR CONDICIONAL TERNÁRIO
