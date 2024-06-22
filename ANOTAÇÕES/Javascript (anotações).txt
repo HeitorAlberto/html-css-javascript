@@ -65,8 +65,8 @@ MODULOS JAVASCRIPT - usado para organizar blocos de códigos em diferentes arqui
 
 COLEÇÃO MAP
   let lista = new Map();
-  lista.set(chave,valor);    //Adiciona um valor (o valor pode repetir, as chaves não)
-  lista.get();               //Pega um valor
-  lista.has();               //Retorna true se a chave existir na coleção
-  lista.delete();            //Deleta um valor pela chave
-  lista.forEach();           //Percorre toda a coleção
+  lista.set(chave,valor);    // Adiciona um valor (o valor pode repetir, as chaves não)
+  lista.get();               // Pega um valor
+  lista.has();               // Retorna true se a chave existir na coleção
+  lista.delete();            // Deleta um valor pela chave
+  lista.forEach();           // Percorre toda a coleção
