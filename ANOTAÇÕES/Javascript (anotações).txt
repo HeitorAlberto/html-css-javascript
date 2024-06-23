@@ -63,10 +63,21 @@ MODULOS JAVASCRIPT - usado para organizar blocos de códigos em diferentes arqui
   Passo 1: export {x} 		(no arquivo 1)
   Passo 2: import {x} from "pasta/arquivo1.js"		(em outro arquivo qualquer)
 
+
 COLEÇÃO MAP
   let lista = new Map();
   lista.set(chave,valor);    // Adiciona um valor (o valor pode repetir, as chaves não)
   lista.get();               // Pega um valor
   lista.has();               // Retorna true se a chave existir na coleção
-  lista.delete();            // Deleta um valor pela chave
+  lista.delete();            // Apaga um valor pela chave
   lista.forEach();           // Percorre toda a coleção
+  lista.clear();             // Apaga todos os elementos
+
+
+COLEÇÃO SET (Não aceita elementos repetidos)
+  let lista = new Map(["item 1", "item 2", "item 3");
+  lista.add();          // Adiciona elementos
+  lista.has();          // Retorna true se a chave existir na coleção
+  lista.forEach();      // Percorre toda a coleção
+  lista.delete();       // Apaga um elemento
+  lista.clear();        // Apaga todos os elementos
