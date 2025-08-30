@@ -6,13 +6,23 @@ SELECIONAR ELEMENTO(S) COM O QUERYSELECTOR
   elementoSelecionado.querySelectorAll(“h1”)  (seleciona todos os h1)
 
 
+
 ADICIONAR E REMOVER CLASSES
   elementoSelecionado.classList.add(“nome da classe”)
   elementoSelecionado.classList.Remove(“nome da classe”)
 
 
+
+
+
+
 ESCUTADOR DE EVENTOS
   elementoSelecionado.addEventListener(“evento”, nomeDaFunção)
+
+
+
+
+
 
 
 ARROW FUNCTION (FUNÇÃO ANÔNIMA)
@@ -22,10 +32,21 @@ ARROW FUNCTION (FUNÇÃO ANÔNIMA)
   // As chaves são obrigatórias caso haja duas ou mais ações dentro do bloco de códigos da função.
 
 
+
+
+
+
+
+
 EVENTOS
   Método 1: <p onMouseOver = “minhaFuncao()”></p>
   Método 2:  elementoSelecionado.addEventListener(“MouseOver”, minhaFuncao)
   // Alguns eventos: onLoad, onMouseOver, onClick, onFocus, onFocusOut, onKeyPress… 
+
+
+
+
+
 
 
 REPETIÇÃO
@@ -33,11 +54,21 @@ REPETIÇÃO
   for (n in nomes){console.log(n)} //Retorna os índices encontrados
 
 
+
+
+
+
+
 REPETIÇÃO FOR EACH
   array.forEach(function(elemento, index, array){console.log(elemento)};
     // Alternativa ao loop FOR.
     // argumento 1 é obrigatório.
     // “index” e “array” são parâmetros opcionais.
+
+
+
+
+
 
 
 REPETIÇÃO MAP
@@ -49,8 +80,21 @@ REPETIÇÃO MAP
   // “index” e “array” são parâmetros opcionais.
 
 
+
+
+
+
+
+
 OPERADOR CONDICIONAL TERNÁRIO
   condição ? comandos se verdadeiro : comandos se falso
+
+
+
+
+
+
+
 
 
 CRIANDO E ADICIONANDO ELEMENTO HTML
@@ -59,9 +103,20 @@ CRIANDO E ADICIONANDO ELEMENTO HTML
   Exemplo 2: elementoPaiSelecionado.appendChild(x)
 
 
+
+
+
+
+
+
 MODULOS JAVASCRIPT - usado para organizar blocos de códigos em diferentes arquivos para melhor manutenção e organização
   Passo 1: export {x} 		(no arquivo 1)
   Passo 2: import {x} from "pasta/arquivo1.js"		(em outro arquivo qualquer)
+
+
+
+
+
 
 
 COLEÇÃO MAP
@@ -72,6 +127,12 @@ COLEÇÃO MAP
   lista.delete();            // Apaga um valor pela chave
   lista.forEach();           // Percorre toda a coleção
   lista.clear();             // Apaga todos os elementos
+
+
+
+
+
+
 
 
 COLEÇÃO SET (Não aceita elementos repetidos)
