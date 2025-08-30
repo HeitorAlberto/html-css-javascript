@@ -1,9 +1,11 @@
-COMANDOS IMPORTANTES DE JAVASCRIPT
-
 SELECIONAR ELEMENTO(S) COM O QUERYSELECTOR
   elementoSelecionado.querySelector(“h1”)   
   elementoSelecionado.querySelector(“#titulo”) (seleciona pelo id “titulo”)
   elementoSelecionado.querySelectorAll(“h1”)  (seleciona todos os h1)
+
+
+
+
 
 
 
@@ -16,8 +18,11 @@ ADICIONAR E REMOVER CLASSES
 
 
 
+
+
 ESCUTADOR DE EVENTOS
   elementoSelecionado.addEventListener(“evento”, nomeDaFunção)
+
 
 
 
